@@ -1,0 +1,420 @@
+<!-- Elmaddin Abishov -->
+ 
+<!--update 15/01/2023 -->
+
+<!-- Bizi öldürməyən gücləndirir -->
+
+==============================================================
+HTML Page Structure foto qeyd olacaq
+
+HTML nədir?
+
+HTML Hyper Text Markup Language deməkdir --> Hipermətn işarələmə dili
+HTML veb səhifələr yaratmaq üçün standart işarələmə dilidir
+HTML Web səhifənin strukturunu təsvir edir
+HTML bir sıra elementlərdən ibarətdir
+HTML elementləri brauzerə məzmunun necə göstəriləcəyini bildirir
+HTML elementləri "bu başlıqdır", "bu paraqrafdır", "bu bir keçiddir" və s. kimi məzmun hissələrini etiketləyir.
+<html> Element HTML səhifəsinin kök elementidir
+<html> --> teqi konteynerdir və bütün səhifəni öz tərkibində saxlayır.
+
+
+<head> --> Teqi brauzerin işində kömək etmək lazım olan məlumatların saxlanılması üçün nəzərdə tutulmuşdur. 
+Brauzer və axtarış sistemləri üçün nəzərdə tutulmuş informasiyanın saxlanılması üçün head teqinde meta teqler olur.
+Məsələn, axtarış sistemlərinin mexanizmləri saytın, açar sözlərin və başqa məlumatların təsvirinin alınması üçün 
+metateqlərə müraciət edir.
+
+<title> Element HTML səhifəsi üçün başlığı təyin edir 
+( bu, brauzerin başlıq çubuğunda və ya səhifənin nişanında göstərilir)
+
+<head> konteynerin daxilində aşağıdakı elementləri yerləşdirmək olar. 
+<base>, <link>, <meta>, <script>, <style>, <title>.
+
+<body> sənədin gövdəsini müəyyən edir və başlıqlar, paraqraflar, şəkillər, hiperlinklər, cədvəllər, siyahılar və s. 
+kimi görünən bütün məzmunlar üçün konteynerdir .
+
+Veb brauzerinin məqsədi HTML sənədlərini oxumaq və onları düzgün göstərməkdir. Brauzer HTML teqlərini göstərmir
+
+Bir teqin başlanğıcı(start) və sonu(end) olur.yəni açıb bağlama.məs
+
+<tagName>...</tagName>  --> nöqtə olan hissə isə contextdir.
+
+Bəzi teqlərdə məzmun olmur.digər deyişlə teqin bağlama hissəsi olmur.
+Bunlara boş element(həmçinin öz-özünə bağlanan teqlər) deyilir.
+HTML5 spesifikasiyasına əsasən, 15 boş teq var. Məs:
+
+<area>
+<base>
+<br>
+<col>
+<embed>
+<hr>
+<img>
+<input>
+<keygen>
+<link>
+<meta>
+<param>
+<source>
+<track>
+<wbr>
+
+--------------------------------------------------
+
+Qeyd etmək lazımdır ki bir teq eyni zamanda müxtəlif növlərə aid ola bilər.
+Məsələn <ul> və <ol> elementləri həm siyahıdırlar həmdə blok elementləridir.
+
+==================================================
+
+Doctype (Document Type Declaration) - Bu etiketlə internet brauzerlərinə səhifəni tərtib edərkən hansı HTML
+versiyasından istifadə etdildiyini bildirir.Eğer DOCTYPE kullanılmazsa tarayıcılar sayfaları standarda uygun 
+olarak yorumlamayacak, dolayısıyla her tarayıcı size farklı farklı sonuçlar verecektir.
+
+
+<!DOCTYPE html> - teq deyil və <html> teqindən əlavə ən üstdə yazılır.
+
+Bütün html teqlərinin brauzerə görə defolut css dəyərləri olur. məsələn <h1> teqində bir söz yazsaq chormedə 
+görəcəyik ki,defolut css dəyəri ~ font-size: 2em; ~ dir.Bu isə mətinin 32px ölçüsündə görünəcəyi deməkdir.
+biz custom css yazaraq onun dəyərini dəyişə bilərik.
+
+==================================================
+
+
+==================================================
+
+Block Element & inline blok element & inline element
+
+Block Elementləri(Block-level) bütün sətri əhatə edir. özündən sonra mətin yazıldıqda onu yeni sətrə keçirir. 
+çünki ekranın sağ-sol hissəsi bu zaman ona aid olur.
+
+inline blok və inline elementlər isə yazıldığı mətinin ölçüsü(uzunlu]u) qədər yer tutur.
+
+inline elementlərin - inline blok elementlərdən fərqi ondadırki - 
+inline elementlər özü inline-block vəya block element olmadığı halda width,Height kimi css dəyərləri qəbul etmir.
+
+
+block-level elements
+
+<address>  <article>  <aside>  <blockquote>  <canvas>  <dd>  <div>  <dl>  <dt>  <fieldset>  <figcaption>  <figure> 
+<footer>  <form>  <h1>-<h6>  <header>  <hr>  <li>  <main>  <nav>  <noscript>  <ol>  <p>  <pre>  <section>  <table>
+<tfoot>  <ul>  <video>
+
+
+Inline Elements
+
+<a>  <abbr>  <acronym>  <b>  <bdo>  <big>  <br>  <button>  <cite>  <code>  <dfn>  <em>  <i>  <img>  <input>  <kbd>  
+<label>  <map>  <object>  <output>  <q>  <samp>  <script>  <select>  <small>  <span>  <strong>  <sub>  <sup>
+<textarea>  <time>  <tt>  <var>
+
+==================================================
+
+
+==================================================
+
+<h1>Heading 1</h1> --> teqləri veb-səhifədə göstərmək istədiyimiz başlıqlar müyəyyən edir.
+Axtarış motorları veb səhifələrinizin strukturunu və məzmununu indeksləşdirmək üçün başlıqlardan istifadə edir.
+
+<h1>....<h6> - teqləri daha əhəmiyyətlidən az əhəmiyyətli sırasına görə sıralanır.Həmçinin font ölçüləridə dəyişir.
+
+==================================================
+
+
+==================================================
+HTML Paragraphs
+
+<p>,<hr>,<br>,<pre>
+--------------------------------------------------
+
+<p>Element HTML sənədində paraqrafı müəyyənləşdirir.
+Abzas həmişə yeni sətirdən başlayır və brauzerlər avtomatik olaraq abzasdan əvvəl və sonra bir az boşluq əlavə edirlər.
+
+
+html görüntüsü(display)
+
+Səhifə göstərildikdə brauzer avtomatik olaraq əlavə boşluqları və sətirləri siləcək
+
+<p>
+        Bu bir HTML paraqrafıdır
+        və bu    bosluqlar silinecek
+</p> 
+
+--------------------------------------------------
+
+Horizontal Rules (Horizontal(üfüqi) Qaydaları)
+
+<hr> --> HTML səhifəsində tematik fasilə müəyyən edir. <hr> boş teqdir.
+
+<hr> --> HTML səhifəsində məzmunu ayırmaq (və ya dəyişikliyi müəyyən etmək) üçün istifadə olunur
+
+--------------------------------------------------
+
+Line Breaks(Xətt Fasilələri)
+
+<br> --> elementi sətir kəsilməsini təyin edir. mətni yeni sətirə keçirmək üçün istifadə olunur.
+aşağıdakı kod brauzerdə belə görsənir. 
+
+<p> 
+    Bu nümunədə 
+    <br> 
+    bu yeri `br` teqi yeni sətrə keçirəcək
+</p>
+
+Məsələn p teqində bir şeir yazmaq istəsək bu zaman sətirlər bütöv olacaq yəni misra şəklində olmayacaq.
+lakin hər misrada br teqi işlədərək istədiyimizi əldə edə bilərik.
+
+bunun diğər alternativi pre teqidir.
+--------------------------------------------------
+
+<pre> --> Teq əvvəlcədən formatlaşdırılmış mətni müəyyənləşdirir. Yəni mətidəki boşluq vəya sətirdən sətirə keçmələr
+necə yazılıbsa elədə ekrada görsənir.mətini yazıldığı kimi göstərir.
+
+==================================================
+
+
+==================================================
+HTML Text Formatting (Mətn Formatlaması)
+--------------------------------------------------
+
+HTML xüsusi məna daşıyan mətni müəyyən etmək üçün bir neçə elementdən ibarətdir.
+
+Formatlaşdırma elementləri mətnin xüsusi növlərini göstərmək üçün nəzərdə tutulmuşdur:
+
+<b>- Qalın mətn
+<strong>- Vacib mətn
+<i>- Kursiv mətn
+<em>- Vurğulanmış mətn
+<mark>- İşarələnmiş mətn(`Kitab oxuyarkən sarı qələmlə vacib bir yerin üstündən xətt çəkirdik,tam olaraq budur`)
+<small>- Kiçik mətn(böyük hərflərlə belə yazılsa normal mətndən kiçik görünəcək.)
+<del>- Silinmiş mətn(məhsulun köhnə qiyməti kimi.üstündən xətt çəkilmiş del teqi, yeni qiyməti isə <ins> )
+<ins>- Daxil edilmiş mətn(məs: məhsulun yeni qiyməti)
+<sub>- Alt yazı mətni
+<sup>- Üst yazı mətni
+
+--------------------------------------------------
+
+Eyni görüntünü verən teqlərin fərqi  
+
+<b> --> teqi yazını sadəcə qalın yazır 
+<strong> --> isə qalın və bu teqin daxilində yazılan mətinin əhəmiyyətli olduğunu bildirir.
+<i> - mətini Kursiv(sağa meyilli) edir
+<em> - Vurğulanmış mətn və kursiv edir
+
+==================================================
+
+
+==================================================
+HTML Quotation Elements(Sitat Elementləri)
+--------------------------------------------------
+Bu bölmədə biz <blockquote>, <q>, <abbr>, <address>, <cite> və <bdo> HTML elementlərini nəzərdən keçirəcəyik.
+
+html'də sitatları bildirmək üçün 2 teq var. <q> for Short Quotations
+
+Bu teqlər vasitəsi ilə Web səhifəmizdə bir başqasına aid olan yazının sitat kimi yaza bilərik.
+
+<q> --> Daha qısa olan sitatlar üçün istifadə olunur. Bu teqdə brauzer auto olaraq 
+sitatın əvvəli və sonuna dırnaq işarəsi atır. 
+
+<blockquote> --> Daha uzun sitatlar üçün istifadə olunur.
+cite -> atributu sitatı haradan alındığını bildirir.link vasitəsi ilə. 
+
+--------------------------------------------------
+Abbreviations - <abbr>
+
+<abbr> --> teqi vasitəsi ilə uzun sözlərin abreviatura bildiririk.title atributuna sözün özünü yazırıq.
+teqin içində isə abreviaturanı.mausla abreviaturanın üzərinə gəldikdə uzun mətin görsənir.
+
+Qısaltmaların işarələnməsi brauzerlərə, tərcümə sistemlərinə və axtarış sistemlərinə faydalı məlumatlar verə bilər.
+
+<abbr title="Hyper Text Markup Language">HTML</abbr> bir işarələmə dilidir.
+
+--------------------------------------------------
+
+<address> --> Teqi Səhifə sahibinin və ya məqaldə yazarın əlaqə məlumatlarını bildirmək üçün istifadə olunur.
+kursiv olaraq görsənir.
+
+--------------------------------------------------
+
+<cite> --> teqi yaradıcı işin (məs, kitab, şeir, mahnı, film, rəsm, heykəl və s.) adını müəyyən edir.
+yalnız ad teqin daxilində yazılır.kursiv olaraq görsənir.
+
+--------------------------------------------------
+
+<bdo> - Bi-Directional Override.BDO iki istiqamətli ləğvetmə deməkdir.
+
+<bdo> --> Teqi cari mətn istiqamətini dəyişmək üçün istifadə olunur:
+
+dir - atributu 2 dəyər qəbul edir
+rtl (right-to-left)
+ltr (Left-to Right) defolut dəyər.
+
+<bdo dir="rtl"> This text will go right-to-left </bdo>
+
+==================================================
+
+
+==================================================
+Links(keçidlər) - <a>
+
+HTML'də bağlantılar(keçid) <a> teqi vasitəsi ilə təyin olunur.
+
+<a href="https://javascript.info">javascript.info -ya keçid</a>
+
+-> href - atributu keçidin ünvanını göstərir.hara keçid edəcəyini
+
+-> target - atributu keçidin necə açılacağını bildirir. 3 dəyəri var.
+> _self  --> defalut dəyər.eyni pəncərədə/tabda açır
+> _blank --> linki yeni pəncərədə və ya tabda açır.
+> _parent--> Əsas çərçivədə sənədi açır
+> _top   --> Sənədi pəncərənin tam mətnində açır
+
+--------------------------------------------------
+
+Absolute(mütləq) URLs vs. Relative(nisbi) URLs
+
+Absolute URL (tam veb ünvanı) istifadə edir 
+<a href="https://www.w3.org/">W3C</a>
+
+eyni veb-saytdakı səhifəyə keçid Relative URL ilə ("https://www" hissəsi olmadan) müəyyən edilir:
+Cari veb-saytda html qovluğunda yerləşən səhifəyə keçid:
+
+<a href="html_images.asp">HTML Images</a>
+
+--------------------------------------------------
+
+İstifadəçinin e-poçt proqramını açan bir keçid yaratmaq üçün(yeni e-poçt göndərmək üçün)
+mailto:  - dəyər isitifadə olunur.
+
+<a href="mailto:elmaddin.abishov1@gmail.com">Send email</a>
+
+
+title --> Atributu element haqqında əlavə məlumatı təyin edir.
+Siçan elementin üzərində hərəkət etdikdə məlumat ən çox alət ipucu mətni kimi göstərilir.
+
+--------------------------------------------------
+Create a Bookmark in HTML(HTML-də əlfəcin yaradın)
+
+Veb səhifə çox uzun olduqda əlfəcinlər faydalı ola bilər.Əlfəcin yaratmaq üçün - əvvəlcə əlfəcin yaradın,
+sonra ona keçid əlavə edin.Linkə kliklədikdə, səhifə aşağı və ya yuxarı əlfəcin olan yerə sürüşəcək.
+
+<h2 id="C4">Chapter 4</h2>
+
+<a href="#C4">Jump to Chapter 4</a>
+
+
+həmçinin başqa səhifədəki əlfəcinlərə keçid əlavə edə bilərik
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+Səhifədə əlfəcinləri müəyyən etmək üçün idatributdan (id=" qiymət ") istifadə edilir.
+Əlfəcinlə əlaqə yaratmaq üçün hrefatributdan (href="# dəyər ") istifadə edilir.
+
+==================================================
+
+
+==================================================
+
+HTML File Paths(fayl yolları)
+
+Fayl yolu veb saytın qovluq strukturunda faylın yerini təsvir edir.
+
+<img src="picture.jpg">	"picture.jpg" faylı cari səhifə ilə eyni qovluqda yerləşir
+<img src="images/picture.jpg">	"picture.jpg" faylı cari qovluqdakı şəkillər qovluğunda yerləşir
+<img src="/images/picture.jpg">	"picture.jpg" faylı cari internetin kökündəki şəkillər qovluğunda yerləşir
+<img src="../picture.jpg">	"picture.jpg" faylı cari qovluqdan bir səviyyə yuxarı qovluqda yerləşir
+
+Xarici fayllara keçid zamanı fayl yolları istifadə olunur, məsələn:
+
+Veb səhifələr
+Şəkillər
+Stil vərəqləri
+JavaScripts
+
+==================================================
+
+
+==================================================
+
+HTML Image Tags(Şəkil Teqləri)
+<img>,<area>,<map>,<picture>
+
+--------------------------------------------------
+<img> teqi veb-səhifəyə şəkil yerləşdirmək üçün istifadə olunur.
+
+iki tələb olunan atributu var:
+
+src - Şəkilə gedən yolu təyin edir.
+alt - Şəkil üçün alternativ mətni təyin edir.əğər görüntü yüklənməzsə o zaman bu atr olan söz görsənəcək.
+və bu fotonun nə ilə əlaqəli olduğunu bildirir.
+
+Ümumi Şəkil Formatları
+Bütün brauzerlərdə (Chrome, Edge, Firefox, Safari, Opera) dəstəklənən ən çox yayılmış şəkil fayl növləri bunlardır:
+
+Abbreviation  --	File Format	File Extension
+APNG  -- Animated Portable Network Graphics -- .apng
+GIF	  -- Graphics Interchange Format        -- .gif
+ICO	  -- Microsoft Icon                     -- .ico, .cur
+JPEG  -- Joint Photographic Expert Group image --	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	  -- Portable Network Graphics	        -- .png
+SVG	  -- Scalable Vector Graphics	        --.svg
+
+--------------------------------------------------
+<map> --> teqi şəkil xəritəsini təyin edir. Şəkil xəritəsi kliklənən sahələri olan bir şəkildir. 
+<area> Sahələr bir və ya bir neçə etiketlə müəyyən edilir .
+
+<img> teqinə `usemap` atributunu əlavə etmək lazımdı və bunu <map> teqi ilə əlaqələndirməliyik.
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+sonra <map> teqini yaradırıq və `name` atributu vasitəsi ilə <img> teqinə əlaqələdirmə edirik.
+hər iki teqin atribut dəyəri eyni olmalıdır.
+
+--------------------------------------------------
+<area> --> şəklin üzərindəki kilik sahəsini yaratmaq üçün istifadə olunur.
+
+> shape -- atributunun dəyərləri sahənin formasını təyin edir.
+> rect- düzbucaqlı bölgəni təyin edir
+> circle- dairəvi bölgəni təyin edir
+> poly- çoxbucaqlı bölgəni təyin edir
+> default- bütün regionu müəyyən edir
+
+.nkl.çnç.ş,bura foto ilə izah ediləcək.n.çş.çş.
+
+--------------------------------------------------
+
+<picture> --> elementi müxtəlif cihazlar və ya ekran ölçüləri üçün müxtəlif şəkilləri göstərməyə imkan verir.
+Bunu <source> teqi vasitəsi ilə edir.
+`srcset` atributu brauzerin cari görünüşünə və yaxud cihaza ən yaxşı uyğun gələn şəkli seçə bilir.
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+Burada img teqi cari səhifənin ölçüləri atributdakı ölçülər olmadıqda aktiv olur.
+
+<picture> - Teqinin 2 əsas məqsədi var.
+
+1) Bandwidth (Bant genişliyi)
+Kiçik bir ekran və ya cihazınız varsa, böyük bir şəkil faylını yükləmək lazım deyil. 
+Brauzer <source> uyğun atribut dəyərlərinə malik birinci elementdən istifadə edəcək və
+aşağıdakı elementlərdən hər hansı birinə məhəl qoymayacaq.
+
+
+2) Format Support (Format dəstəyi)
+Bəzi brauzerlər və ya cihazlar bütün şəkil formatlarını dəstəkləməyə bilər.Bu zaman <picture> teqindən istifadə
+edərək bütün şəkil formatların əlavə edirik və brauzer ilk tanıdığı format göstərir.
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+Burada birinic hansı teqin isləməsi yuxarldan aşağı sıra ilədir.
+
+==================================================
+
+
+==================================================
+
